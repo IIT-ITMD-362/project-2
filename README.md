@@ -1,2 +1,2 @@
-# project-2
+# project2
 Website Redesign
