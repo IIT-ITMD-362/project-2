@@ -138,12 +138,24 @@ footer img {
 
 
 #row{
-  background-color: rgb(0, 43, 128);
-  
+  background-color: white;
+  border-radius: 10px;  
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+}
+
+#rowF{
+  background-color: white;
+  border-radius: 10px;  
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  padding: 30px;
 }
 
 #img{
   width: 100%
+}
+
+#imgF{
+  width: 80%
 }
 
 
@@ -249,7 +261,6 @@ footer img {
   }
   
   .blue-background{
-    
     margin: 0;
     padding: 0;
     width: 100%;
@@ -269,6 +280,18 @@ footer img {
     
   }
   
+  #rowF {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    top: 150px;
+    
+    
+  }
+  
   #text-overlay{
     position: absolute;
     width: 300px;
@@ -282,10 +305,10 @@ footer img {
   }
   
   .rowhead{
-  border-top: 1px solid;
-  text-align: left;
-  margin-top: 35%;
-}
+    border-top: 1px solid;
+    text-align: left;
+    margin-top: 35%;
+  }
 
   .col{
     float: left;
@@ -301,95 +324,61 @@ footer img {
 }
 
 
-/******* Steph's CSS *******/
-
-.form-background{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
+#column-l {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    to top,
-    white 0%,
-    white 50%,
-    #002b80 50%,
-    #002b80 100%
-  );
-} 
-/*The background display of form*/
-.form-body{
-  background: white;
-  display: flex;
-  position: absolute;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 15px;
-  height: 500px;
-  width: 780px;
-  padding: 50px;
-  margin: 20px 40px 60px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-} 
-
-/*Left side of form*/
-form{
-  max-width: 300px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
+	width: 100%;
+  justify-content: space-around;
 }
 
-input{
+#column-r {
+  display: flex;
+	width: 100%;
+  justify-content: space-around;
+  
+
+}
+
+label {
+  display: block; 
+}
+
+input {
+ 
+	display: block;
   box-sizing: border-box;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border-radius: 4px;
+  width: 65%;
+  height: 40px;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
-input, textarea{
-  max-width: 300px;
-  background-color: #bfbfbf;
-  color: #002b80;
-  letter-spacing: 1px;
-  border-radius: 5px;
+input[type="submit"] {
+	
+	height: 45px;
+  border-radius: 10px;
+	background-color: #001328;
+	color: #C0C0C0;
+
 }
 
-/******* End of Steph's CSS *******\
-
-
-/* CSS for isud.html *\
-
-/* Grid container for event cards */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+li#input-submit{
+	padding-bottom: 0px;
 }
 
-/* Event card styles */
-.event-card {
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: box-shadow 0.3s ease-in-out;
+form li {
+  padding-bottom: 1.182em; /* 26px / ~ 120% */  
+	/* adding a padding to each li so that they aren't so close together */
 }
 
-.event-card:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+form ol{
+	padding-top: 20px; 
 }
 
-/* Responsive styles */
-@media (min-width: 600px) {
-  .event-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
+.float{
+  float: left;
+  margin-bottom: 1.182em;
 }
