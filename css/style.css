@@ -240,11 +240,13 @@ input[type="submit"] {
   padding-bottom: 0px;
 }
 
+
 .float{
   margin-bottom: 1.182em;
 }
 
 .padd{
+  clear: both;
   margin-bottom: 1.182em;
 }
 
