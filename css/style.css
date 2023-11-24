@@ -6,7 +6,7 @@ html{
   text-rendering: optimizeLegibility;
   height: 100%;
   padding-bottom: 1.2em; 
-  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif, serif, cursive;
   display: flex;
   flex-direction: column;
 }
@@ -18,7 +18,7 @@ h1{
   padding-bottom: 1.2em; 
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif, serif, cursive;
 }
 
 h2{
@@ -26,7 +26,7 @@ h2{
   line-height: 1.2em; 
   padding-top: 1.2em;
   padding-bottom: 1.2em; 
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif, serif, cursive;
 }
 
 h3{
@@ -271,7 +271,6 @@ select, input[type="email"] {
   padding: 0;
   margin-bottom: 50px;
 }
-
 
 #p{
   border-top: 1px solid;
