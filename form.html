@@ -29,79 +29,51 @@
       </a>
     </nav>
   </header>
-  <div class="blue-background">
+  <div class="form-background">
     <div id="rowF">
       <div id="column-l">
         <img id="imgF" src="images/4-About.jpg">
       </div>
       <div id="column-r">
         <form name="myForm" onsubmit="return validateForm()" method="get" action="#null" autocomplete="on">
-          <h2>How can we help you?</h2>
-          <div class="float">
-            <input type="text" id="fname" name="fname">
+          <h2>Contact Us</h2>
+          
+          <div id="padd" class="float">
             <label for="fname">First:</label>
+            <input type="text" id="fname" name="fname" required> 
           </div>
+          
           <div class="float">
-            <input type="text" id="lname" name="lname">
-            <label for="lname">Last</label>
+            <label for="lname">Last:</label> 
+            <input type="text" id="lname" name="lname" required>
           </div>
-          <ol>
-            <li id="input-options">
-              <label for="options">How Can We Help You?</label>
-              <select id="options" name="options" size="3" multiple>
-                <option value="new cookie flavors">General Question or Comment</option>
-                <option value="discounts">Membership Information</option>
-                <option value="other promotion">Other</option>
-              </select>
-            </li>
-            <li id="input-submit">
-              <input type="submit" name="submit" id="submit" value="Send">
-            </li>
-          </ol>
+          
+          <div class="padd">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="padd">
+            <label for="options">How Can We Help You?</label>
+            <select id="options" name="options" size="3" multiple>
+              <option value="new cookie flavors">General Question or Comment</option>
+              <option value="discounts">Membership Information</option>
+              <option value="other promotion">Other</option>
+            </select>
+          </div>
+          
+          <div class="padd">
+            <label for="comments">Your Comments or Question</label>
+            <textarea id="comments" name="comments"></textarea>
+          </div>
+          
+          <div class="padd">
+            <input type="submit" name="submit" id="submit" value="Send">
+          </div>
+        
         </form>
       </div>
     </div>
-  </div>
-  <div id="wrap">
-    <main>
-      <div class="rowhead">
-        <h1>Latest Stories</h1>
-      </div>
-      <section>
-        <div class="row">
-          <div class="col">
-            <div class="col-inner-img">
-              <img src="images/1-2018.png" alt="article preview image">
-            </div>
-            <div class="col-inner">
-              <h3><a href="https://www.worldialogue.org/copy-of-2016-congress" target="_blank">Philospohy In An Age of Crisis: Challenges and Prospects</a></h3>
-              <p>Lima, Peru&nbsp;&nbsp;July 10-15, 2018</p>
-              <p> The goal of this World Congress is to promote dialogue concerning various crucial philosophical issues in today’s world and to explore the role of philosophy in our complicated times.</p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="col-inner-img">
-              <img src="images/1-2016.jpg" alt="article preview image">
-            </div>
-            <div class="col-inner">
-              <h3><a href="https://www.worldialogue.org/congress-details" target="_blank">Values and Ideals: Theory and Praxis</a></h3>
-              <p>July 11-15, 2016&nbsp;&nbsp;Warsaw, Poland</p>
-              <p>The 2016 XI ISUD World Congress was conducted as a celebration of the Society’s founding twenty-eight years ago in Warsaw.</p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="col-inner-img"> 
-              <img src="images/Journal.png" alt="article preview image">
-            </div>
-            <div class="col-inner">
-              <h3><a href="https://www.worldialogue.org/d---u-journal" target="_blank">Dialogue and Universalism</a></h3>
-              <p>Vol.XXVI&nbsp;&nbsp;No. 4/2017</p>
-              <p>Dialogue and Universalism is the peer reviewed academic journal of the International Society for Universal Dialogue (ISUD).</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
   </div>
   <footer id="footer">
     <div id="f-forms">
